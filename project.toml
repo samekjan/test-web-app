@@ -1,0 +1,14 @@
+[build]
+builder = "paketobuildpacks/builder-jammy-full"
+
+[[build.env]]
+name  = "RAILS_ENV"
+value = "production"
+
+[[build.env]]
+name  = "BUNDLE_WITHOUT"
+value = "development:test"
+
+[[build.env]]
+name  = "SECRET_KEY_BASE_DUMMY"
+value = "1"

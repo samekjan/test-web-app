@@ -1,0 +1,36 @@
+# Bundler
+/.bundle
+/vendor/bundle
+
+# Environment
+.env
+.env.*
+
+# SQLite databases
+/storage/*.sqlite3
+/storage/*.sqlite3-*
+
+# Assets
+/public/assets
+
+# Logs and temp files
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Rails credentials — master.key NEVER commit
+/config/master.key
+/config/credentials/*.key
+
+# Test coverage
+/coverage
+
+# macOS
+.DS_Store
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
