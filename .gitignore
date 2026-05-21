@@ -13,11 +13,15 @@
 # Assets
 /public/assets
 
-# Logs and temp files
-/log/*
-/tmp/*
+# Logs
+/log/**/*
 !/log/.keep
-!/tmp/.keep
+
+# Temp files (keep directory structure for container permissions)
+/tmp/restart.txt
+/tmp/pids/*.pid
+/tmp/cache/bootsnap/
+/tmp/cache/assets/
 
 # Rails credentials — master.key NEVER commit
 /config/master.key
