@@ -35,6 +35,11 @@
         <span class="text-gray-200 font-medium">Ruby <%= RUBY_VERSION %></span>.
       </p>
 
+      <%# vault test secret %>
+      <p class="mt-4 text-gray-400 text-sm">
+        Vault test: <span class="text-gray-200 font-medium"><%= ENV["VAULT_TEST_SECRET"] %></span>
+      </p>
+
       <%# status badge %>
       <div class="mt-8 inline-flex items-center gap-2 bg-emerald-950/60 border border-emerald-800/50 text-emerald-400 text-sm font-medium px-4 py-2 rounded-full">
         <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
